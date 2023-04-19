@@ -1,6 +1,14 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import {
+  BrowserRouter as Router,
+  // Switch,
+  Route,
+  Routes
+  // Link
+} from "react-router-dom";
+
 
 function App() {
   return (
@@ -19,6 +27,13 @@ function App() {
           Learn React
         </a>
       </header>
+      {/* <Router>
+      <Routes>
+      <Route path="/" element={<App />} />
+      <Route path="expenses" element={<Expenses />} />
+      <Route path="invoices" element={<Invoices />} />
+    </Routes>
+      </Router> */}
     </div>
   );
 }

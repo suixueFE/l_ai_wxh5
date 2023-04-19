@@ -1,0 +1,62 @@
+.text-preview {
+  .taroify-fixed-view--top {
+    z-index: 5;
+    height: 56PX;
+  }
+
+
+  .preview-image {
+    position: relative;
+    .preview-indicator {
+      position: absolute;
+      top: 12PX;
+      right: 12PX;
+      width: 34PX;
+      text-align: center;
+      line-height: 22PX;
+      border-radius: 24PX;
+      color: #fff;
+      font-size: 12PX;
+      background: rgba(0,0,0,.5);
+      z-index: 2;
+    }
+    .preview-swiper {
+      height: 100vw;
+      overflow: visible;
+      
+      .taroify-swiper-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .swiper-image {
+          height: 100%;
+          width: auto;
+        }
+      }
+
+      .taroify-swiper__indicators {
+        bottom: -21PX;        
+      }
+    }
+  }
+
+  .preview-content {
+    padding: 34PX 15PX 0;
+    margin-bottom: 3PX;
+
+    .preview-title {
+      line-height: 28PX;
+      font-size: 18PX;
+      font-weight: 500;
+    }
+
+    .preview-container {
+      font-size: 16PX;
+      line-height: 24PX;
+      p {
+        margin: 16PX 0;
+      }
+    }
+  }
+}

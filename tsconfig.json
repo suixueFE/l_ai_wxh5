@@ -1,11 +1,16 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es2020",
+    // "module": "commonjs",
     "lib": [
       "dom",
       "dom.iterable",
       "esnext"
     ],
+    "baseUrl": "", // 工作根目录
+    "paths": {
+      "@/*": ["./src/*"],
+      },
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -22,5 +27,6 @@
   },
   "include": [
     "src"
-  ]
+, "src/static/sensitive.json"  ],
+  "compileOnSave": false
 }
